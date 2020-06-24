@@ -43,6 +43,7 @@ public class DateChecker{
 			return employees;
 		} catch (FileNotFoundException ex) {
 				System.out.println("Text file cannot be found!");
+				System.exit(0);
 		} catch (IOException e){
 				System.out.println(e);
 		} finally {
@@ -171,7 +172,7 @@ public class DateChecker{
 		+ result[0]
 		+ " days!");
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Please check the file path!");
+			System.out.println("There are no contents in the file!");
 		}
 	}
 }
