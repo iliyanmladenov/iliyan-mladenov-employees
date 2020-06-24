@@ -170,8 +170,8 @@ public class DateChecker{
 		+ " for "
 		+ result[0]
 		+ " days!");
-		} catch (Exception e) {
-			System.out.println(e);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Please check the file path!");
 		}
 	}
 }
